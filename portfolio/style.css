@@ -44,7 +44,7 @@
   main {
     /* como o menu ocupa 10vh, este tem 90vh para o vermo inteiro. */
     height: 90vh;
-    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fposterspy.com%2Fwp-content%2Fuploads%2F2020%2F04%2Flightning.jpg&f=1&nofb=1&ipt=74543751ebb949ec9ec57ea1c3a8fda34b54f6495ff54686ed5d49ad9febdaff&ipo=images");
+    background: url(https://miro.medium.com/v2/resize:fit:1000/1*kqgUuHyWxsdCuJ2C5O5xQg.gif);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -70,7 +70,7 @@
   article.segundo {
     /* como tem menu e rodapé visíveis (10vh cada), define-se como altura 80vh. */
     height: 80vh;
-    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fabuse-drug.com%2Fwp-content%2Fuploads%2F2016%2F02%2Fpsilocybin-mushrooms-1024x1024.jpg&f=1&nofb=1&ipt=df46656814f12b7577c4063ecf98c68d23f8ce107054ca767005bb8ad2d7eb18&ipo=images");
+    background: url(https://miro.medium.com/v2/resize:fit:1000/1*kqgUuHyWxsdCuJ2C5O5xQg.gif);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
