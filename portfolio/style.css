@@ -5,15 +5,6 @@
     box-sizing: border-box;
   }
   
-  
-  body > * {  
-    /* centrando o <p> dos divs */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3em;
-  }
-  
   /* div "menu" */
   header {
     /* O menu está sticky e ocupa 10vh da altura do viewport */
@@ -89,7 +80,6 @@
 
   /* darkmode */
   body {
-    padding: 25px;
     background-color: white;
     color: black;
     font-size: 25px;
