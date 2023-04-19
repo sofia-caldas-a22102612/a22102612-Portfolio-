@@ -1,33 +1,36 @@
 * {
-    padding: 0; 
-    margin: 0;
-    font-family: monospace;
-    box-sizing: border-box;
-  }
-  
-  /* div "menu" */
-  header {
-    /* O menu está sticky e ocupa 10vh da altura do viewport */
-    height: 10vh; 
-    background: black;
-    color: white;
-    position: sticky;
-    top: 0;  
-    
-    display:flex;
-    justify-content: space-between;  
-  }
+  padding: 0;
+  margin: 0;
+  font-family: monospace;
+  box-sizing: border-box;
+
+}
+
+/* div "menu" */
+header {
+  /* O menu está sticky e ocupa 10vh da altura do viewport */
+  height: 10vh;
+  background: black;
+  color: white;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: left;
+}
 
 
-
-
- /* Dropdown Button */
+/* Dropdown Button */
 .dropbtn {
-  background-color: #a4b9cc;
   color: rgb(40, 39, 49);
-  padding: 16px;
+  padding: 0px;
   font-size: 16px;
   border: none;
+  display: flex;
+  position: sticky;
+  height: 60px;
+  width: 60px;
+  align-items: center;
+  justify-content: center;
 }
 
 .dropbtnDark {
@@ -36,6 +39,8 @@
   padding: 16px;
   font-size: 16px;
   border: none;
+  display: flex;
+  position: sticky;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -50,7 +55,7 @@
   position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -63,143 +68,164 @@
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
-  
-
-
-
-  
-  main {
-    /* como o menu ocupa 10vh, este tem 90vh para o vermo inteiro. */
-    height: 90vh;
-    background: url(https://miro.medium.com/v2/resize:fit:1000/1*kqgUuHyWxsdCuJ2C5O5xQg.gif);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    color: white;
-  }
-  
-  
-  main > p {
-    font-size: 3rem;
-  }
-  
-  article.primeiro {
-    /* definindo altura e cor */
-    height: 90vh;
-    background: orange;
-    padding: 0 4vw;
-    text-align: center;
-    font-size: 2rem;
-  }
-  
-  
-  article.segundo {
-    /* como tem menu e rodapé visíveis (10vh cada), define-se como altura 80vh. */
-    height: 80vh;
-    background: url(https://miro.medium.com/v2/resize:fit:1000/1*kqgUuHyWxsdCuJ2C5O5xQg.gif);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    align-items: start;
-  }
-  
-  footer {
-    /* definindo altura e cor */
-    height: 10vh;
-    background: black;
-    color: white;
-  }
-
-
-  /* darkmode */
-  body {
-    background-color: white;
-    color: black;
-    font-size: 25px;
-  }
-  
-  .dark-mode {
-    background-color: black;
-    color: white;
-  }
-
-  #bimba{
-    height: 60px;
-    width: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
 
 
 
 
-  .calculator {
-    display: flex;
-    border-radius: 10px;
-    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15), 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
-    margin-inline-start: auto;
-    margin-inline-end: auto;
-    margin-block-start: 2em;
-    max-inline-size: 22rem;
-    overflow: hidden;
-    color: hsl(202, 11%, 29%);
-  }
-  .calculatorDisplay {
-    background: hsl(255, 100%, 100%);
-    font-size: 4.2rem;
-    padding-block-start: 3rem;
-    padding-block-end: 0.5rem;
-    padding-inline-end: 1.25rem;
-    text-align: end;
-  }
-  .calculatorKeys {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1px;
-    background: hsl(255, 100%, 100%);
-    padding: 0.5rem;
-  }
-  .calculatorKey {
-    background: hsl(210, 25%, 95%);
-    border: none;
-    padding-block-start: 1rem;
-    padding-block-end: 1rem;
-    padding-inline-end: 1.25rem;
-    padding-inline-start: 1.25rem;
-    font-size: 1.5rem;
-    /* Playful Styles */
-    inline-size: 70px;
-    block-size: 70px;
-    margin: 0.25rem;
-    border-radius: 40px;
-  }
-  .calculatorKey:active,
-  .calculatorKey:focus {
-    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3) inset;
-    outline: none;
-  }
-  .calculatorKey--operator {
-    background: hsl(208, 25%, 86%);
-  }
-  .calculatorKey--operator:active {
-    background: hsl(208, 24%, 80%);
-  }
-  .calculatorKey--enter {
-    grid-column: 4 / 5;
-    grid-row: 2 / span 4;
-    background: hsl(357, 100%, 72%);
-    height: auto;
-  }
- 
 
-  
+.main {
+  /* como o menu ocupa 10vh, este tem 90vh para o vermo inteiro. */
+  height: 90vh;
+  background: url(https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+
+.mainDarkMode {
+  /* como o menu ocupa 10vh, este tem 90vh para o vermo inteiro. */
+  height: 90vh;
+  background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia1.tenor.com%2Fimages%2Fb926a670778d922a0bd433efd1ebab9c%2Ftenor.gif%3Fitemid%3D12310940&f=1&nofb=1&ipt=7eb05bcad2c465e87f1be23afc9014c594afcee451a46686187009e87808b97e&ipo=images);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+
+
+main>p {
+  font-size: 3rem;
+}
+
+article.primeiro {
+  /* definindo altura e cor */
+  height: 90vh;
+  background: orange;
+  padding: 0 4vw;
+  text-align: center;
+  font-size: 2rem;
+}
+
+
+article.segundo {
+  /* como tem menu e rodapé visíveis (10vh cada), define-se como altura 80vh. */
+  height: 80vh;
+  background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia1.tenor.com%2Fimages%2Fb926a670778d922a0bd433efd1ebab9c%2Ftenor.gif%3Fitemid%3D12310940&f=1&nofb=1&ipt=7eb05bcad2c465e87f1be23afc9014c594afcee451a46686187009e87808b97e&ipo=images);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  align-items: start;
+}
+
+footer {
+  /* definindo altura e cor */
+  height: 10vh;
+  background: black;
+  color: white;
+}
+
+
+/* darkmode */
+body {
+  background: url(https://i.makeagif.com/media/6-17-2017/BKjpdj.mp4);
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background: url(https://i.makeagif.com/media/6-17-2017/BKjpdj.mp4);
+  color: white;
+}
+
+#bimba {
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/*code for calculator*/
+
+.calculator {
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15), 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  margin-block-start: 2em;
+  max-inline-size: 22rem;
+  overflow: hidden;
+  color: hsl(202, 11%, 29%);
+}
+
+.calculatorDisplay {
+  background: hsl(255, 100%, 100%);
+  font-size: 4.2rem;
+  padding-block-start: 3rem;
+  padding-block-end: 0.5rem;
+  padding-inline-end: 1.25rem;
+  text-align: end;
+}
+
+.calculatorKeys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1px;
+  background: hsl(255, 100%, 100%);
+  padding: 0.5rem;
+}
+
+.calculatorKey {
+  background: hsl(210, 25%, 95%);
+  border: none;
+  padding-block-start: 1rem;
+  padding-block-end: 1rem;
+  padding-inline-end: 1.25rem;
+  padding-inline-start: 1.25rem;
+  font-size: 1.5rem;
+  /* Playful Styles */
+  inline-size: 70px;
+  block-size: 70px;
+  margin: 0.25rem;
+  border-radius: 40px;
+}
+
+.calculatorKey:active,
+.calculatorKey:focus {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3) inset;
+  outline: none;
+}
+
+.calculatorKey--operator {
+  background: hsl(208, 25%, 86%);
+}
+
+.calculatorKey--operator:active {
+  background: hsl(208, 24%, 80%);
+}
+
+.calculatorKey--enter {
+  grid-column: 4 / 5;
+  grid-row: 2 / span 4;
+  background: hsl(357, 100%, 72%);
+  height: auto;
+}
