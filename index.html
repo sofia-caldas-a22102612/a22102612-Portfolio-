@@ -15,21 +15,50 @@
 <body>
   <header>
 
-    <button id="bimba" onclick="myFunction()">
-      <i class="fa-regular fa-flag" style="color: #000000;"></i>
-    </button>
-
+    
+   <nav> 
+    <ul>
+      <li>
+        <div id = "button">
+        <i class="fa-solid fa-gear" style="color: #929292;"></i>
+      </div>
+        <ul>
+          <li> 
+            <button id="bimba" onclick="myFunction()">
+              <i class="fa-regular fa-flag" style="color: #ffffffaa;"></i>
+             </button>
+          </li>
+        </ul>
+      </li>
+    </ul>
+   </nav>
+   
+   
 
     <nav>
-      <div class="dropdown">
-        <button id="dropbtn" class="dropbtn">Menu</button>
-        <div class="dropdown-content">
+      <ul>
+        <li>
           <a href="#">Hero</a>
-          <a href="#article">Article</a>
-          <a href="#"></a>
-          <a href="#calculator">Calculator</a>
-        </div>
-      </div>
+        </li>
+        <li>
+          <a href="#">About Me</a>
+          <ul>
+            <li> <a href="#article">Article</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">My Projects</a>
+          <ul>
+            <li><a href="#calculator">Because no one likes arithmetic</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Calculator</a>
+          <ul>
+            <li><a href="#calculator">Because no one likes arithmetic</a></li>
+          </ul>
+        </li>
+      </ul>
 
     </nav>
 
@@ -37,7 +66,7 @@
 
   </header>
 
-  <main id = "main" class = "main">
+  <main id="main" class="main">
     <p>Sofia Caldas</p>
 
   </main>
