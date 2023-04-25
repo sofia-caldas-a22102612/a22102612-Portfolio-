@@ -28,3 +28,6 @@ document.querySelectorAll('div.titulo').forEach(d => {
     }
   };
 });
+
+
+
