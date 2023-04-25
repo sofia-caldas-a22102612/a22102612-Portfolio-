@@ -1,4 +1,12 @@
 
+
+function playSound() {
+  var audio = document.getElementById("sound-button");
+  audio.play("sounds\interface-soft-abbreviated-click-131438.mp3");
+  audio.currentTime = 0;
+}
+
+
 function myFunction() {
  
   var image = document.getElementById("bimba");

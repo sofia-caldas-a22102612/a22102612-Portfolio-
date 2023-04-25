@@ -153,7 +153,14 @@ article.primeiro {
 }
 
 
-
+#sound-button {
+  background-color: rgba(240, 248, 255, 0);
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
 #bimba {
