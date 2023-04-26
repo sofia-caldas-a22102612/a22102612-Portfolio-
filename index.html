@@ -18,22 +18,22 @@
    <nav> 
     <ul>
       <li>
-        <div id = "button">
+        <div id = "button" onclick="playClickSound()">
         <i class="fa-solid fa-gear" style="color: #929292;"></i>
       </div>
         <ul>
           <li> 
-            <button id="bimba" onclick="myFunction()">
+            <button id="bimba" onclick="myFunction()" onclick="playClickSound()">
               <i class="fa-regular fa-flag" style="color: #ffffffaa;"></i>
              </button>
           </li>
           <li> 
-            <button id="sound-button" onclick="stopSound()">
+            <button id="sound-button" onclick="playClickSound()">
               <i class="fa-solid fa-volume-off" style="color: #ffffffaa;"></i>
              </button>
           </li>
           <li> 
-            <audio controls src="sounds\sadness-in-roads-to-nowhere-23407.mp3" autoplay="true"></audio>
+            <audio controls src="sounds\sadness-in-roads-to-nowhere-23407.mp3" autoplay="true" loop="true"></audio>
           </li>
         </ul>
       </li>
@@ -102,10 +102,9 @@
   </article>
 
 
-
-  <div id="calculator" class="calculator">
-    <div class="calculatorDisplay">0</div>
-    <div class="calculatorKeys">
+<article2>
+  <div class="calculator">
+    <div class="display">0</div>
       <button class="calculatorKey calculatorKey--operator">+</button>
       <button class="calculatorKey calculatorKey--operator">-</button>
       <button class="calculatorKey calculatorKey--operator">&times;</button>
@@ -124,8 +123,7 @@
       <button class="calculatorKey">AC</button>
       <button class="calculatorKey calculatorKey--enter">=</button>
     </div>
-  </div>
-
+</article2>
 
   <footer>ULusófona, 2023</footer>
 </body>
