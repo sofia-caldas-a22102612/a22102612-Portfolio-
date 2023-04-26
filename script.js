@@ -1,9 +1,6 @@
-
-
-function playSound() {
-  var audio = document.getElementById("sound-button");
-  audio.play("sounds\interface-soft-abbreviated-click-131438.mp3");
-  audio.currentTime = 0;
+function playClickSound() {
+  var audio = new Audio('sounds\interface-soft-abbreviated-click-131438.mp3');
+  audio.play();
 }
 
 
@@ -24,17 +21,22 @@ function myFunction() {
 }
 
 
-document.querySelectorAll('div.titulo').forEach(d => {
 
-  d.onclick = function clicar() {
-    if (d.nextElementSibling.style.display == 'block') {
-      d.nextElementSibling.style.display = 'none'
-    }
-    else {
-      d.nextElementSibling.style.display = 'block';
 
-    }
-  };
+var display = document.querySelector('.display');
+
+// Get all the buttons
+var buttons = document.querySelectorAll('button');
+
+// Add click event listeners to each button
+buttons.forEach(function(button) {
+  button.addEventListener('click', function() {
+    // Get the button value
+    var value = button.textContent;
+
+    // Append the value to the display
+    display.textContent += value;
+  });
 });
 
 
