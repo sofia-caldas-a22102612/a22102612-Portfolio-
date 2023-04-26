@@ -235,7 +235,7 @@ article  > {
 footer {
   /* definindo altura e cor */
   height: 10vh;
-  background: black;
+  background: rgba(0, 0, 0, 0.334);
   color: white;
 }
 
