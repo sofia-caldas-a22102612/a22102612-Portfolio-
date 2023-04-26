@@ -1,0 +1,260 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+  
+  }
+  
+  
+  body {
+    /* como o menu ocupa 10vh, este tem 90vh para o vermo inteiro. */
+    height: 90vh;
+    background: url(https://qph.cf2.quoracdn.net/main-qimg-d047c93b7514b0ca84c93ec29d307ad3.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    color: rgb(0, 0, 0);
+    text-shadow: #ccc;
+  }
+  
+  
+  .dark-mode {
+    /* como o menu ocupa 10vh, este tem 90vh para o vermo inteiro. */
+    height: 90vh;
+    background: url(https://cdn.shopify.com/s/files/1/0217/9998/products/black-jesus-scafa2.jpg?v=1626923804);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    color: white;
+  }
+  
+  
+  
+  main{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+  }
+  
+  
+  
+  /* div "menu" */
+  header {
+    height:fit-content;
+    background: rgba(47, 47, 47, 0.733);
+    color: white;
+    position:sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between; 
+    flex-wrap: inherit;
+  }
+  
+  
+  
+  
+  
+  /*tentativa*/
+  
+  
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between; 
+    align-items: center;
+    justify-content: center;
+  }
+  
+  nav li {
+    display: inline-block;
+    position: relative;
+    background-color: #d7d7d700;
+    color: rgba(197, 196, 208, 0.993);
+    padding: 0px;
+    font-size: 16px;
+    height: 60px;
+    width: 120px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  nav ul li:hover {
+    background-color: #5e676c0b;
+    border-width: 2px;
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.179);
+  }
+  
+  nav ul li:hover > a{
+    color: lightgray;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #707070cc;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.489);
+    z-index: 1;
+  }
+  
+  nav ul li:hover > ul {
+    display: block;
+  }
+  
+  nav a {
+    display: block;
+    padding: 10px;
+    color: #cfcfcfd7;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  nav ul ul li {
+    display: block;
+  }
+  
+  
+  
+  
+  
+  
+  main>p {
+    font-size: 3rem;
+  }
+  
+  article.primeiro {
+    /* definindo altura e cor */
+    height: 90vh;
+    background: rgba(255, 166, 0, 0.701);
+    padding: 0 4vw;
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  
+  article.dark-mode{
+    height: 90vh;
+    background: linear-gradient(to bottom, #adfbff3f 0%, #60337d7d 100%);
+    padding: 0 4vw;
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  
+  #button
+    {
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  #sound-button {
+    background-color: rgba(240, 248, 255, 0);
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  #bimba {
+    background-color: rgba(240, 248, 255, 0);
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  /*code for calculator*/
+  #calculator-space{
+    justify-content:space-between; 
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .calculator {
+    width: 300px;
+    height: 400px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 5px;
+    padding: 10px;
+  }
+  
+  .calculatorKey {
+    font-size: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .display {
+    grid-column: 1 / span 4;
+    text-align: right;
+    font-size: 30px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+  
+  article  > {
+    font-size: 20px;
+    background-color: #fff;
+    border: 1px solid #949494;
+    box-shadow: inset;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  article.jesus{
+    height: 90vh;
+    background: rgba(0, 0, 0, 0.264);
+    background-size:cover;
+    padding: 0 4vw;
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  
+  
+  footer {
+    /* definindo altura e cor */
+    height: 10vh;
+    background: rgba(0, 0, 0, 0.334);
+    color: white;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
