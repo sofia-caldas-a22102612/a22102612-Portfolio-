@@ -134,14 +134,6 @@
     font-size: 3rem;
   }
   
-  article.primeiro {
-    /* definindo altura e cor */
-    height: 90vh;
-    background: rgba(255, 166, 0, 0.701);
-    padding: 0 4vw;
-    text-align: center;
-    font-size: 2rem;
-  }
   
   
   article.dark-mode{
@@ -152,73 +144,7 @@
     font-size: 2rem;
   }
   
-  
-  #button
-    {
-    height: 60px;
-    width: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  
-  #sound-button {
-    background-color: rgba(240, 248, 255, 0);
-    height: 60px;
-    width: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  
-  #bimba {
-    background-color: rgba(240, 248, 255, 0);
-    height: 60px;
-    width: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  
-  /*code for calculator*/
-  #calculator-space{
-    justify-content:space-between; 
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .calculator {
-    width: 300px;
-    height: 400px;
-    background-color: #eee;
-    border: 1px solid #ccc;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-gap: 5px;
-    padding: 10px;
-  }
-  
-  .calculatorKey {
-    font-size: 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-  .display {
-    grid-column: 1 / span 4;
-    text-align: right;
-    font-size: 30px;
-    padding: 10px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-  }
+
   
   article  > {
     font-size: 20px;
@@ -230,15 +156,41 @@
     cursor: pointer;
   }
   
-  article.jesus{
+  article#jesus{
     height: 90vh;
     background: rgba(0, 0, 0, 0.264);
     background-size:cover;
+    position: sticky;
+    padding: 0 4vw;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+
+  article#mushies{
+    height: 90vh;
+    color: whitesmoke;
+    background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.wired.com%2Fphotos%2F5cfaba39f317320677b72960%2Fmaster%2Fw_2560%252Cc_limit%2Fscience_psilocybin.jpg&f=1&nofb=1&ipt=864f68bbe9e2a91c328897f9ca9d522056815985f6001807697f2226908749ed&ipo=images);
+    background-size:cover;
+    position: sticky;
     padding: 0 4vw;
     text-align: center;
     font-size: 2rem;
   }
   
+
+  article#sharks{
+    height: 90vh;
+    color: whitesmoke;
+    background: url(memeforpwshark.png);
+    background-size:cover;
+    background-size: 100% 100%;
+    position: sticky;
+    padding: 0 4vw;
+    text-align: center;
+    font-size: 2rem;
+
+  }
   
   
   footer {
