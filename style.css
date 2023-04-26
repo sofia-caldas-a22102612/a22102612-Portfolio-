@@ -15,7 +15,8 @@ body {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  color: white;
+  color: rgb(0, 0, 0);
+  text-shadow: #ccc;
 }
 
 
@@ -137,6 +138,15 @@ article.primeiro {
   /* definindo altura e cor */
   height: 90vh;
   background: rgba(255, 166, 0, 0.701);
+  padding: 0 4vw;
+  text-align: center;
+  font-size: 2rem;
+}
+
+
+article.dark-mode{
+  height: 90vh;
+  background: linear-gradient(to bottom, #adfbff3f 0%, #60337d7d 100%);
   padding: 0 4vw;
   text-align: center;
   font-size: 2rem;
