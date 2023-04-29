@@ -9,24 +9,43 @@ function myFunction() {
   var image = document.getElementById("bimba");
   var element = document.body;
   var article = document.getElementById("article");
-  var audio = document.getElementById("audio");
-  
+  var header = document.getElementById("header");
+  var menuColor = document.getElementsByTagName("a");
+
   element.classList.toggle("dark-mode");
   article.classList.toggle("dark-mode");
+  header.classList.toggle("dark-mode");
 
 
-  if (image.innerHTML == "<i class=\"fa-solid fa-fish fa-xl\" style=\"color: #000000;\"></i>") {
-    image.innerHTML = "<i class=\"fa-regular fa-flag\" style=\"color: #000000;\"></i>";
-    audio.innerHTML = "  <audio controls src=\"sounds\sadness-in-roads-to-nowhere-23407.mp3\" autoplay=\"true\" loop=\"true\"></audio>";
+  if (image.innerHTML == "<i class=\"fa-solid fa-moon\" style=\"color: #535353;\"></i>") {
+    image.innerHTML = " <i class=\"fa-solid fa-sun\" style=\"color: #efefefa3;\"></i>";
   }
   else {
-    image.innerHTML = "<i class=\"fa-solid fa-fish fa-xl\" style=\"color: #000000;\"></i>";
-    audio.innerHTML = "<audio controls src=\"sounds\galaxy-140898.mp3\" autoplay=\"true\" loop=\"true\"></audio>";
+    image.innerHTML = "<i class=\"fa-solid fa-moon\" style=\"color: #efefefa3;\"></i>";
   }
+
+
+  for(var i = 0; i < menuColor.length; i++) {
+    menuColor[i].classList.toggle("dark-letters");
+ }
+
 }
 
 
+//break
 
+
+function calcular() {
+  const expressao = document.getElementById('expressao').value;
+  const resultado = eval(expressao);
+  document.getElementById('resultado').textContent = `O resultado é: ${resultado}`;
+}
+
+function apagarResultado() {
+  document.getElementById('resultado').textContent = '';
+}
+
+//break
 
 var display = document.querySelector('.display');
 
