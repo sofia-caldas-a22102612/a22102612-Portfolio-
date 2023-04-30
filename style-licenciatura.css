@@ -15,7 +15,7 @@ body {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  color: rgba(255, 255, 255, 0.884);
+  color: rgba(36, 36, 36, 0.884);
   text-shadow: #ccc;
 }
 
@@ -128,16 +128,18 @@ nav ul ul li {
 article.primeiro {
   /* definindo altura e cor */
   height: 90vh;
-  background: linear-gradient(to bottom, #ffffff3f 0%, #99ff967d 100%);
+  background: linear-gradient(to bottom, #ffffffb8 0%, #979797ac 100%);
   padding: 0 4vw;
   text-align: center;
+  display: table-cell;
+  vertical-align: middle;
   font-size: 2rem;
 }
 
 
 article.dark-mode{
   height: 90vh;
-  background: linear-gradient(to bottom, #adfbff3f 0%, #60337d7d 100%);
+  background: linear-gradient(to bottom, #adfbff74 0%, #5f337d97 100%);
   padding: 0 4vw;
   text-align: center;
   font-size: 2rem;
@@ -186,13 +188,15 @@ article  > {
 
 
 #cadeiras {
-  background-color: #ffffff73;
-  height: 200px;
+  height: 600px;
+  align-items: center;
+  justify-content: center;
   
 }
 
 
 #cadeiras ul {
+  background-color: rgba(205, 205, 205, 0.89);
   list-style: none;
   margin: 0;
   padding: 0;
@@ -202,14 +206,27 @@ article  > {
   align-items: center;
 }
 
+#cadeiras ul li >p{
+  background-color: rgba(166, 166, 166, 0.582);
+  border-left: gray;
+  border-right: #949494;
+  border-width: 1px;
+  height: 100px;
+  width: 100px;
+  font-size: large;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
 #cadieras li {
+  
   display: inline-block;
   position: relative;
   
   padding: 0px;
-  font-size: 16px;
   height: 60px;
-  width: 120px;
+  width: 1200px;
   align-items: center;
   justify-content: center;
 }
@@ -219,6 +236,9 @@ article  > {
   background-color: #5e676c0b;
   border-width: 2px;
   box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.179);
+  align-items: center;
+  justify-content: center;
+  
 }
 
 #cadeiras ul li:hover > a{
@@ -230,14 +250,21 @@ article  > {
 #cadeiras ul ul {
   display: none;
   position: absolute;
-  background-color: #959595ca;
-  min-width: 160px;
+  background-color: rgb(195, 195, 195);
+  width: max-content;
+  height: fit-content;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.489);
   z-index: 1;
 }
 
+#cadeiras ul ul p{
+  background-color: #949494;
+  font-size: 20px;
+}
+
 #cadeiras ul li:hover > ul {
   display: block;
+  
 }
 
 #cadeiras a {
@@ -252,6 +279,7 @@ article  > {
 
 nav ul ul li {
   display: block;
+  
 }
 
 
