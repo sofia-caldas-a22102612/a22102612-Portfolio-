@@ -85,3 +85,9 @@ submitButton.addEventListener('click', function() {
   caption.textContent = userInput;
 });
 
+
+var today = new Date();
+var date = today.toLocaleDateString();
+
+// set date element text to formatted date
+document.getElementById("date").innerHTML = date;

@@ -10,12 +10,12 @@
   body {
     /* como o menu ocupa 10vh, este tem 90vh para o vermo inteiro. */
     height: 90vh;
-    background: url(https://images.pexels.com/photos/251603/pexels-photo-251603.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background: url(https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    color: rgba(0, 0, 0, 0.621);
+    color: rgb(0, 0, 0);
     text-shadow: #ccc;
   }
   
@@ -23,11 +23,29 @@
   body.dark-mode {
     /* como o menu ocupa 10vh, este tem 90vh para o vermo inteiro. */
     height: 90vh;
+    background: url(https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     color: rgba(255, 255, 255, 0.741);
+  }
+  
+  
+  
+  main{
+    height: 500px;
+    display: flex;
+    color: #ffffff;
+    align-items: center;
+    justify-content:space-evenly;
+  }
+  
+  #apresentacao{
+    height: 90vh;
+    padding: 0 4vw;
+    text-align: center;
+    font-size: 1rem;
   }
   
   
@@ -55,6 +73,8 @@
   }
   
   /*tentativa*/
+  
+  
   
   nav ul {
     list-style: none;
@@ -121,13 +141,20 @@
   
   
   .dark-letters{
-    color: rgba(255, 255, 255, 0.753);
+    color: rgba(255, 255, 255, 0.545);
   }
   
+  
+  
+  main>p {
+    font-size: 3rem;
+  }
   
   article.primeiro {
     /* definindo altura e cor */
     height: 90vh;
+    width: 100%;
+    background: rgba(255, 166, 0, 0.595);
     padding: 0 4vw;
     text-align: center;
     font-size: 2rem;
@@ -173,6 +200,43 @@
   }
   
   
+  /*code for calculator*/
+  #calculator-space{
+    justify-content:space-between; 
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .calculator {
+    width: 300px;
+    height: 400px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 5px;
+    padding: 10px;
+  }
+  
+  .calculatorKey {
+    font-size: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .display {
+    grid-column: 1 / span 4;
+    text-align: right;
+    font-size: 30px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+  
   article  > {
     font-size: 20px;
     background-color: #fff;
@@ -184,68 +248,47 @@
   }
   
   
+  /*calcu*/
   
-
-
-  i{
-    font-size: 20px;
+  input {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    width: 100%;
+    margin-bottom: 1rem;
   }
-
-
-  .image-container {
-    position: relative;
-    display: inline-block;
+  button {
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
   }
-  
-  #caption {
-    background-color: #ffffffc1;
-    font-size: 16px;
-    color: #333;
-    margin: 20px;
+  #resultado {
+    font-size: 1.5rem;
+    margin-top: 1rem;
   }
   
-  #caption-input {
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    margin-right: 10px;
+  
+  
+  /*break*/
+  
+  .item1 { grid-area: header; }
+  .item2 { grid-area: menu; }
+  .item3 { grid-area: main; }
+  .item4 { grid-area: right; }
+  .item5 { grid-area: footer; }
+  .grid-container {
+  display: grid;
+  grid-template-areas:
+  'header header header'
+  'menu main right '
+  'menu footer footer';
   }
   
-  #submit-caption {
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    background-color: #fa8900ca;
-    color: rgb(14, 14, 14);
-    border: none;
+  menu.a:hover {
+    transform: translateY(-5px);
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
   }
-
-
-
-  #calculadora{
-    height: 200px;
-  }
-
-
-  #user{
-    height: 200px;
-  }
-
-
-  #imagem{
-    height: 600px;
-   
-  }
-
-  .image-container{
-    height: 300px;
-    width: 600px;
-    background: url(memeforpwshark.png);
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-position: center;
-  }
+  
+  
   
   footer {
     /* definindo altura e cor */

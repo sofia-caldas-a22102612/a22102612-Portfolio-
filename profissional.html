@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="style-playground.css">
+  <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
   <script src="https://kit.fontawesome.com/a1320d93f1.js" crossorigin="anonymous"></script>
 </head>
@@ -18,18 +18,10 @@
    <nav> 
     <ul id = menu>
       <li>
-        <div id = "button" onclick="playClickSound()">
-        <i class="fa-solid fa-gear" style="color: #929292;"></i>
-      </div>
         <ul>
           <li> 
             <button id="bimba" onclick="myFunction()" onclick="playClickSound()">
               <i class="fa-solid fa-sun" style="color: #efefefa3;"></i>
-             </button>
-          </li>
-          <li> 
-            <button id="sound-button" onclick="playClickSound()">
-              <i class="fa-solid fa-volume-off" style="color: #ffffffaa;"></i>
              </button>
           </li>
           <li id="song"> 
@@ -41,8 +33,6 @@
    </nav>
    
    
-
-  
 
    <nav>
     <ul>
@@ -86,71 +76,16 @@
   </header>
 
 
-<main>
-
-  <div id = calculadora>
+  <main id="main" class="main">
     
-    <i>Calculadora</i>
-    <br>
-    <br>
-    <label for="expressao">Insira uma expressão aritmética:</label>
-    <input type="text" id="expressao" name="expressao">
-    <button id="calcular" onclick="calcular()">Calcular</button>
-    <button id="apagar" onclick="apagarResultado()">Apagar Resultado</button>
-    <div id="resultado"></div>
-    </div>
- 
-   <div id = imagem>
-    
+  </main>
 
-    <i>Imagem Inspiradora</i>
-    <br>
-    <br>
-     <div class="image-container">
-        <a target="_blank" href="img_5terre.jpg">
-            <div id = "img"></div>
-            <p id="caption">Default Caption</p>
-          </a>
-          
-
-       </div>
-       
-       <label for="caption-input">O que esta imagem o inspira?:</label>
-        <input type="text" id="caption-input">
-      <button type="button" id="submit-caption">Submit</button>
-
-       
- 
-   </div>
-
-   <div  id="user">
-   <i>You is Important</i>
-   <br>
-   <br>
-      
-      <label for="user-input">Write your name:</label>
-       <input type="user-text" id="user-input">
-     <button type="button" id="submit-user">Submit</button>
-   </div>
+  <article id="article" class="primeiro">
+   Nothing
+  </article>
 
 
-   <div  id="data">
-    <i>You is Important</i>
-    <br>
-    <br>
-       
-       <label for="user-input">Insira a data de hoje:</label>
-        <input type="user-text" id="user-input">
-      <button type="button" id="submit-user">Submit</button>
-    </div>
-  
-  
-</main>
-
-  <footer>ULusófona, 2023
-  <p id="date"></p>
-
-  </footer>
+  <footer>ULusófona, 2023</footer>
 </body>
 
 </html>
