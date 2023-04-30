@@ -79,6 +79,7 @@ submitButton.addEventListener('click', function() {
 const submitButtonUser = document.getElementById('submit-user');
 const inputFieldUser = document.getElementById('user-input');
 const user = document.getElementById('user');
+var change1 =document.getElementById('caption');
 
 submitButton.addEventListener('click', function() {
   const userInput = inputField.value;
