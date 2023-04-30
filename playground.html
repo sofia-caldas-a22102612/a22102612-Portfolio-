@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style-playground.css">
+  <script src="script.js" defer></script>
+  <script src="https://kit.fontawesome.com/a1320d93f1.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+  <header id = "header">
+
+   <nav> 
+    <ul id = menu>
+      <li>
+        <div id = "button" onclick="playClickSound()">
+        <i class="fa-solid fa-gear" style="color: #929292;"></i>
+      </div>
+        <ul>
+          <li> 
+            <button id="bimba" onclick="myFunction()" onclick="playClickSound()">
+              <i class="fa-solid fa-sun" style="color: #efefefa3;"></i>
+             </button>
+          </li>
+          <li> 
+            <button id="sound-button" onclick="playClickSound()">
+              <i class="fa-solid fa-volume-off" style="color: #ffffffaa;"></i>
+             </button>
+          </li>
+          <li id="song"> 
+            <audio controls src="sounds\sadness-in-roads-to-nowhere-23407.mp3" autoplay="true" loop="true"></audio>
+          </li>
+        </ul>
+      </li>
+    </ul>
+   </nav>
+   
+   
+
+  
+
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Hero</a>
+        </li>
+        <li>
+          <a href="#">About Me</a>
+          <ul>
+            <li> <a href="#article">Licenciatura</a></li>
+            <li> <a href="educação.html">Educação </a></li>
+            <li> <a href="#article">Aptidões e competências pessoais </a></li>
+            <li> <a href="intereces.html">Interesses e hobbies </a></li>
+            <li> <a href="#article">Experiencia profissional </a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">My Projects</a>
+          <ul>
+            <li><a href="#calculator">Because no one likes arithmetic</a></li>
+            <li><a href="#calculator">Projects Related to my Degree</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Calculator</a>
+          <ul>
+            <li><a href="#calculator">Because no one likes arithmetic</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Contacts</a>
+          <ul>
+            <li> <a href="https://www.linkedin.com/in/sofia-caldas-4b329120b/">Linkedin</a></li>
+            <li> <a href="https://github.com/sofia-caldas-a22102612">github</a></li>
+            <li> <p>ULHT 2023</p></li>
+          </ul>
+        </li>
+      </ul>
+
+    </nav>
+
+
+
+  </header>
+
+
+
+
+
+  <div id = calculadora>
+    <label for="expressao">Insira uma expressão aritmética:</label>
+    <input type="text" id="expressao" name="expressao">
+    <button id="calcular" onclick="calcular()">Calcular</button>
+    <button id="apagar" onclick="apagarResultado()">Apagar Resultado</button>
+    <div id="resultado"></div>
+    </div>
+ 
+   <div id = imagem>
+    
+     <div class="image-container">
+        <a target="_blank" href="img_5terre.jpg">
+            <img src="https://narrativepainting.net/wp-content/uploads/2019/11/gustave-dore-les-saltimbanques-1874.jpg" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="desc">Add a description of the image here</div>
+       </div>
+       
+       <form>
+         <label for="caption-input">Escreva uma frase inspirada pela imagem:</label>
+         <input type="text" id="caption-input" name="caption">
+         <button type="button" onclick="addCaption()">Adicionar Legenda</button>
+       </form>
+       
+ 
+   </div>
+  
+  
+
+
+  <footer>ULusófona, 2023</footer>
+</body>
+
+</html>

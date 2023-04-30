@@ -65,3 +65,16 @@ buttons.forEach(function(button) {
 
 
 
+function addCaption() {
+  // Obtenha o valor do input de legenda
+  const captionInput = document.getElementById("caption-input");
+  const captionValue = captionInput.value;
+
+  // Atualize a legenda na imagem
+  const caption = document.getElementById("caption");
+  caption.innerText = captionValue;
+
+  // Limpe o input de legenda
+  captionInput.value = "";
+}
+
