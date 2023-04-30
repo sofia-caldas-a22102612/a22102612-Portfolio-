@@ -17,8 +17,8 @@ function myFunction() {
   header.classList.toggle("dark-mode");
 
 
-  if (image.innerHTML == "<i class=\"fa-solid fa-moon\" style=\"color: #535353;\"></i>") {
-    image.innerHTML = " <i class=\"fa-solid fa-sun\" style=\"color: #efefefa3;\"></i>";
+  if (image.innerHTML == "<i class=\"fa-solid fa-moon\" style=\"color: #efefefa3;\"></i>") {
+    image.innerHTML = "<i class=\"fa-solid fa-sun\" style=\"color: #363636a3;\"></i>";
   }
   else {
     image.innerHTML = "<i class=\"fa-solid fa-moon\" style=\"color: #efefefa3;\"></i>";

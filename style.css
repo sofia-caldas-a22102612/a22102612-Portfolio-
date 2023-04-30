@@ -85,7 +85,9 @@ nav ul {
   justify-content:space-between; 
   align-items: center;
   justify-content: center;
+  
 }
+
 
 nav li {
   display: inline-block;
@@ -97,6 +99,7 @@ nav li {
   width: 120px;
   align-items: center;
   justify-content: center;
+  
 }
 
 
@@ -132,6 +135,8 @@ nav a {
   text-decoration: none;
   align-items: center;
   justify-content: center;
+  
+
 }
 
 
