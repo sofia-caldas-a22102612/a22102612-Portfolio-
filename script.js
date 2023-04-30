@@ -65,16 +65,23 @@ buttons.forEach(function(button) {
 
 
 
-function addCaption() {
-  // Obtenha o valor do input de legenda
-  const captionInput = document.getElementById("caption-input");
-  const captionValue = captionInput.value;
+const submitButton = document.getElementById('submit-caption');
+const inputField = document.getElementById('caption-input');
+const caption = document.getElementById('caption');
 
-  // Atualize a legenda na imagem
-  const caption = document.getElementById("caption");
-  caption.innerText = captionValue;
+submitButton.addEventListener('click', function() {
+  const userInput = inputField.value;
+  caption.textContent = userInput;
+});
 
-  // Limpe o input de legenda
-  captionInput.value = "";
-}
+
+
+const submitButtonUser = document.getElementById('submit-user');
+const inputFieldUser = document.getElementById('user-input');
+const user = document.getElementById('user');
+
+submitButton.addEventListener('click', function() {
+  const userInput = inputField.value;
+  caption.textContent = userInput;
+});
 
