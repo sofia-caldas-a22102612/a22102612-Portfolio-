@@ -153,6 +153,7 @@ main>p {
 article.primeiro {
   /* definindo altura e cor */
   height: 90vh;
+  width: 100%;
   background: rgba(255, 166, 0, 0.595);
   padding: 0 4vw;
   text-align: center;
