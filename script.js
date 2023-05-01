@@ -5,7 +5,7 @@ function playClickSound() {
 
 
 function myFunction() {
- 
+
   var image = document.getElementById("bimba");
   var element = document.body;
   var article = document.getElementById("article");
@@ -25,9 +25,9 @@ function myFunction() {
   }
 
 
-  for(var i = 0; i < menuColor.length; i++) {
+  for (var i = 0; i < menuColor.length; i++) {
     menuColor[i].classList.toggle("dark-letters");
- }
+  }
 
 }
 
@@ -53,8 +53,8 @@ var display = document.querySelector('.display');
 var buttons = document.querySelectorAll('button');
 
 // Add click event listeners to each button
-buttons.forEach(function(button) {
-  button.addEventListener('click', function() {
+buttons.forEach(function (button) {
+  button.addEventListener('click', function () {
     // Get the button value
     var value = button.textContent;
 
@@ -65,11 +65,52 @@ buttons.forEach(function(button) {
 
 
 
+
+function toggleMenu() {
+  var menu = document.querySelector('.menu-hide');
+  menu.classList.toggle('menu-show');
+}
+
+
+
+// get current date
+const currentDate = new Date();
+
+// define months array
+const months = [
+  "january",
+  "february",
+  "march",
+  "april",
+  "may",
+  "june",
+  "july",
+  "august",
+  "september",
+  "october",
+  "november",
+  "december",
+];
+
+// get day, month, and year
+const day = currentDate.getDate();
+const month = months[currentDate.getMonth()];
+const year = currentDate.getFullYear();
+
+// format date string
+const dateString = `${day} of ${month}, ${year}`;
+
+// display date in element
+document.getElementById("date").textContent = dateString;
+
+
+
+
 const submitButton = document.getElementById('submit-caption');
 const inputField = document.getElementById('caption-input');
 const caption = document.getElementById('caption');
 
-submitButton.addEventListener('click', function() {
+submitButton.addEventListener('click', function () {
   const userInput = inputField.value;
   caption.textContent = userInput;
 });
@@ -79,9 +120,9 @@ submitButton.addEventListener('click', function() {
 const submitButtonUser = document.getElementById('submit-user');
 const inputFieldUser = document.getElementById('user-input');
 const user = document.getElementById('user');
-var change1 =document.getElementById('caption');
+var change1 = document.getElementById('caption');
 
-submitButton.addEventListener('click', function() {
+submitButton.addEventListener('click', function () {
   const userInput = inputField.value;
   caption.textContent = userInput;
 });
