@@ -72,6 +72,17 @@ function toggleMenu() {
 }
 
 
+function toggleJungle() {
+  var menu = document.querySelector('.hide-jungle');
+  menu.classList.toggle('show');
+}
+
+function toggleSweeper() {
+  var menu = document.querySelector('.hide-sweeper');
+  menu.classList.toggle('show');
+}
+
+
 
 // get current date
 const currentDate = new Date();
@@ -111,8 +122,8 @@ const inputField = document.getElementById('caption-input');
 const caption = document.getElementById('caption');
 
 submitButton.addEventListener('click', function () {
-  const userInput = inputField.value;
-  caption.textContent = userInput;
+  const userInputCaption = inputField.value;
+  caption.textContent = userInputCaption;
 });
 
 
@@ -120,11 +131,11 @@ submitButton.addEventListener('click', function () {
 const submitButtonUser = document.getElementById('submit-user');
 const inputFieldUser = document.getElementById('user-input');
 const user = document.getElementById('user');
-var change1 = document.getElementById('caption');
+const change1 = document.getElementById('caption');
 
 submitButton.addEventListener('click', function () {
   const userInput = inputField.value;
-  caption.textContent = userInput;
+  change1.textContent = userInput;
 });
 
 

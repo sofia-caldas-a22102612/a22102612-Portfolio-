@@ -34,7 +34,7 @@ body.dark-mode {
 
 
 main {
-  height: 500px;
+  height: 250px;
   display: flex;
   color: #ffffff;
   align-items: center;
@@ -216,6 +216,17 @@ article.primeiro {
   font-size: 2rem;
 }
 
+article.projects {
+  /* definindo altura e cor */
+  height:fit-content;
+  width: 100%;
+  background: rgba(255, 166, 0, 0.595);
+  padding: 0 4vw;
+  text-align: center;
+  font-size: 2rem;
+  align-items: center;
+}
+
 
 article.dark-mode {
   height: 90vh;
@@ -227,11 +238,12 @@ article.dark-mode {
 
 
 #button {
-  height: 60px;
-  width: 60px;
+  height: 100px;
+  width: 400x;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgba(224, 94, 0, 0.882);
 }
 
 
@@ -287,6 +299,7 @@ article> {
 .image-container img {
   max-width: 100%;
   height: auto;
+  border-radius: 16px;
 }
 
 .text-container {
@@ -335,4 +348,18 @@ article> {
   .site-footer .col {
     width: 45%;
   }
+}
+
+.hide-jungle{
+
+  display: none;
+}
+
+.hide-sweeper{
+
+  display: none;
+}
+
+.show{
+  display: flex;
 }
