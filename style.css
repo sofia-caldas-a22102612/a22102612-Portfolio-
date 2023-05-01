@@ -208,7 +208,7 @@ main>p {
 
 article.primeiro {
   /* definindo altura e cor */
-  height: 90vh;
+  min-height: 90vh;
   width: 100%;
   background: rgba(255, 166, 0, 0.595);
   padding: 0 4vw;
@@ -218,7 +218,7 @@ article.primeiro {
 
 article.projects {
   /* definindo altura e cor */
-  height:fit-content;
+  height: fit-content;
   width: 100%;
   background: rgba(255, 166, 0, 0.595);
   padding: 0 4vw;
@@ -226,6 +226,7 @@ article.projects {
   font-size: 2rem;
   align-items: center;
 }
+
 
 
 article.dark-mode {
@@ -350,16 +351,16 @@ article> {
   }
 }
 
-.hide-jungle{
+.hide-jungle {
 
   display: none;
 }
 
-.hide-sweeper{
+.hide-sweeper {
 
   display: none;
 }
 
-.show{
+.show {
   display: flex;
 }
