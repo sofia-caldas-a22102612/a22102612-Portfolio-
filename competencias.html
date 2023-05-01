@@ -13,37 +13,19 @@
 
 
 <body>
-  <header>
+  <header id="header">
 
-   <nav> 
-    <ul>
-      <li>
-        <div id = "button" onclick="playClickSound()">
-        <i class="fa-solid fa-gear" style="color: #929292;"></i>
-      </div>
-        <ul>
-          <li> 
-            <button id="bimba" onclick="myFunction()" onclick="playClickSound()">
-              <i class="fa-regular fa-flag" style="color: #ffffffaa;"></i>
-             </button>
-          </li>
-          <li> 
-            <button id="sound-button" onclick="playClickSound()">
-              <i class="fa-solid fa-volume-off" style="color: #ffffffaa;"></i>
-             </button>
-          </li>
-          <li id="song"> 
-            <audio controls src="sounds\sadness-in-roads-to-nowhere-23407.mp3" autoplay="true" loop="true"></audio>
-          </li>
-        </ul>
-      </li>
-    </ul>
-   </nav>
-   
-   
+    <button id="bimba" onclick="myFunction()" onclick="playClickSound()">
+      <i class="fa-solid fa-sun" style="color: #363636a3;"></i>
+    </button>
+
 
     <nav>
-      <ul>
+      <button class="menu" onclick="toggleMenu()">
+        <i class="fa-sharp fa-regular fa-compass" style="color: #4d4d4d;"></i>
+      </button>
+      <ul class="menu-hide">
+
         <li>
           <a href="index.html">Hero</a>
         </li>
@@ -58,7 +40,7 @@
           </ul>
         </li>
         <li>
-          <a href="projetos.css">My Projects</a>
+          <a href="projetos.html">My Projects</a>
           <ul>
             <li><a href="#calculator">Projects Related to my Degree</a></li>
           </ul>
@@ -78,6 +60,9 @@
       </ul>
 
     </nav>
+
+
+
   </header>
 
 
